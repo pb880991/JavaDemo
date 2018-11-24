@@ -1,0 +1,11 @@
+package _01;
+
+import java.io.IOException;
+
+public class ProcessDemo {
+	public static void main(String[] args) throws Exception {
+		Runtime runtime = Runtime.getRuntime();
+		runtime.exec("notepad");
+		
+	}
+}

@@ -1,0 +1,9 @@
+import java.util.UUID;
+
+public class UUIDDemo {
+	public static void main(String[] args) {
+		//UUID绝对随机，没有子类
+		String uuid = UUID.randomUUID().toString();
+		System.out.println(uuid);
+	}
+}

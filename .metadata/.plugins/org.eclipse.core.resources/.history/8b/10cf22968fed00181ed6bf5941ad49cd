@@ -1,0 +1,22 @@
+
+public class CharSequenceDemo {
+
+	public static void testString()
+	{
+		long begin = System.currentTimeMillis();
+		String strr = "";
+		for (int i = 0; i < 30000; i++) {
+			strr += i;
+		}
+		long end = System.currentTimeMillis();
+		System.out.println(end - begin);
+	}
+	public static void testStringBuilder()
+	{
+		
+	}
+	public static void testStringBuffer() 
+	{
+		
+	}
+}

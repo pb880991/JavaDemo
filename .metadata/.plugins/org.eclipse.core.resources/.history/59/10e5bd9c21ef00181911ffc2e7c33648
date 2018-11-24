@@ -1,0 +1,9 @@
+package _01;
+
+public class ProcessDemo {
+	public static void main(String[] args) {
+		Runtime runtime = Runtime.getRuntime();
+		runtime.exec("notepad");
+		
+	}
+}

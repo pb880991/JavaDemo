@@ -1,0 +1,7 @@
+package Regex_;
+
+public class RegexDemo {
+	public static void main(String[] args) {
+		//正则表达式主要用来匹配判断，分割操作，替换操作
+	}
+}

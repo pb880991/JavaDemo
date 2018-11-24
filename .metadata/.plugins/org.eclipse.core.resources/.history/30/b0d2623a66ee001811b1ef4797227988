@@ -1,0 +1,8 @@
+package exceptionDemo_;
+
+public class SingleCatchDemo {
+	public static void main(String[] args) {
+		System.out.println("开始");
+		System.out.println("结束");
+	}
+}

@@ -1,0 +1,16 @@
+
+public class CharSequenceDemo {
+
+	public static void testString()
+	{
+		
+	}
+	public static void testStringBuilder()
+	{
+		
+	}
+	public static void testStringBuffer() 
+	{
+		
+	}
+}

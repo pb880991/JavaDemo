@@ -1,0 +1,7 @@
+
+
+public class UUIDDemo {
+	public static void main(String[] args) {
+		//UUID绝对随机，没有子类
+	}
+}

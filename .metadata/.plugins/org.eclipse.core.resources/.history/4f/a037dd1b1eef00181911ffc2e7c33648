@@ -1,0 +1,22 @@
+package _01;
+
+
+public class GameDemo {
+
+	public static void main(String[] args) {
+		
+		playGame();
+		playMusic();
+	}
+	
+	private static void playGame() {
+		for (int i = 0; i < 1000; i++) {
+			System.out.println("playGame----------");
+		}
+	}
+	private static void playMusic() {
+		for (int i = 0; i < 1000; i++) {
+			System.out.println("playMusic");
+		}
+	}
+}

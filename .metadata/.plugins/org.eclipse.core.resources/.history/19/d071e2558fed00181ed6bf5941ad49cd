@@ -1,0 +1,15 @@
+
+public class StringDemo {
+/*StringBuilder和StringBuffer可变字符串
+ * */
+	public static void main(String[] args) {
+		System.out.println(121242);
+		String str = "老婆大人";
+		System.out.println("我爱" + str);
+		System.out.println(hasLength(str));
+	}
+	public static boolean hasLength(String str) 
+	{
+		return str != null && !"".equals(str.trim());
+	}
+}

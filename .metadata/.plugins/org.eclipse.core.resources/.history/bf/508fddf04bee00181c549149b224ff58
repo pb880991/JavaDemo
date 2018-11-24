@@ -1,0 +1,27 @@
+import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class UUIDDemo {
+	
+
+	public static void main(String[] args) {
+		//UUID绝对随机，没有子类，16进制，一般用来表示随机的唯一的字符串
+		String uuid = UUID.randomUUID().toString();
+		System.out.println(uuid);
+		
+		
+		String str = "ABCDEFGHIGKLMNOPQRSTUVWXYZ";
+		str += str.toLowerCase();
+		str += "0123456789";
+		System.out.println(str);
+		ThreadLocalRandom r4 = ThreadLocalRandom.current();
+		
+		int i1 = r4.nextInt(str.length());
+		int i2 = r4.nextInt(str.length());
+		int i3 = r4.nextInt(str.length());
+		int i4 = r4.nextInt(str.length());
+		int i5 = r4.nextInt(str.length());
+		System.out.println(str.charAt(i1) + str.charAt(i2)+
+						   str.charAt(i3) + str.charAt(i4) + str.charAt(i5));
+	}
+}
