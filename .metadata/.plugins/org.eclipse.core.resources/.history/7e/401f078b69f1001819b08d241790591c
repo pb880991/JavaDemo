@@ -1,0 +1,25 @@
+package 吃苹果比赛;
+
+class RunnableImpl implements java.lang.Runnable{
+	static private int num = 50; //添加static修饰，不然没人都吃50个苹果
+	private String name;
+	public RunnableImpl(String name) {
+		// TODO Auto-generated constructor stub
+		this.name = name;
+	}
+	public void run() {
+		for (int i = 0; i < 50; i++) {
+			if (0 < num) {
+				System.out.println("吃了第" + num-- + "个苹果");
+			}
+		}
+	}
+}
+
+public class ImplementsDemo {
+	public static void main(String[] args) {
+		new Thread(new RunnableImpl()).start();
+		new Thread(new RunnableImpl()).start();
+		new Thread(new RunnableImpl()).start();
+	}
+}

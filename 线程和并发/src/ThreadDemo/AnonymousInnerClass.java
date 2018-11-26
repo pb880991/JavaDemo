@@ -1,0 +1,20 @@
+package ThreadDemo;
+
+public class AnonymousInnerClass {
+	//匿名内部类创建线程，只适用于某一个类只使用一次的情况
+	public static void main(String[] args) {
+		for (int i = 0; i < 500; i++) {
+			System.out.println("打游戏" +i);
+			if(i == 10) {
+				new Thread(new Runnable() {  //接口形式的
+					public void run() {
+						// TODO Auto-generated method stub
+						for (int i = 0; i < 500; i++) {
+							System.out.println("听音乐" +i);
+						}
+					}
+				}).start();
+			}
+		}
+	}
+}

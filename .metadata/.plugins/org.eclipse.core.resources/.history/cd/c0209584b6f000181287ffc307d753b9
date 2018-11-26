@@ -1,0 +1,8 @@
+package ThreadDemo;
+
+public class AnonymousInnerClass {
+	//匿名内部类
+	public static void main(String[] args) {
+		
+	}
+}

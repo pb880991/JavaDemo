@@ -1,0 +1,8 @@
+package ThreadDemo;
+
+public class AnonymousInnerClass {
+	//匿名内部类创建线程，只适用于某一个类只使用一次的情况
+	public static void main(String[] args) {
+		
+	}
+}

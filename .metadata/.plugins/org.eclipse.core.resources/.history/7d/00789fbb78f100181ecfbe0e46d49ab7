@@ -1,0 +1,46 @@
+package 线程安全181126;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+class Apple3 implements java.lang.Runnable {
+	private int num = 500;
+	private final Lock lock = new ReentrantLock();
+	// synchronized不能修饰run()方法
+	public void run() {
+		for (int i = 0; i < 500; i++) {
+			eat();
+		}
+	}
+
+	private void eat() {
+		lock.lock();
+		if (0 < num) {
+		try {
+			System.out.println(Thread.currentThread().getName() + "吃了第" + num + "个苹果");
+			num--;
+			Thread.sleep(1);
+		}catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			// TODO: handle finally clause
+		}
+		
+			// 模拟网络延迟
+			try {
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} // 吃苹果出了问题
+			
+		}
+	}
+}
+//同步锁（Lock），是接口
+public class LockDemo {
+	public static void main(String[] args) {
+		Apple3 runnableImpl2 = new Apple3();
+		new Thread(runnableImpl2, "小A").start();
+		new Thread(runnableImpl2, "小B").start();
+		new Thread(runnableImpl2, "小C").start();
+	}
+}

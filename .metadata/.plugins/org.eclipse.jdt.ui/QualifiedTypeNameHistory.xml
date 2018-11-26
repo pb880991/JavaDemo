@@ -11,10 +11,16 @@
     <fullyQualifiedTypeName name="Random_"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.oops.java_lang_Class"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="ThreadDemo.RunDemoThread"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="吃苹果比赛.Person"/>
+    <fullyQualifiedTypeName name="吃苹果比赛.RunnableImpl"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="吃苹果比赛.RunnableImpl2"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.Lock"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
 </qualifiedTypeNameHistroy>

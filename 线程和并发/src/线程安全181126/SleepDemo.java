@@ -1,0 +1,15 @@
+package 线程安全181126;
+
+/*在线程的run()方法上不能使用throws来声明抛出异常，只能在方法中使用try-catch来处理异常
+ * 因为子类覆盖父类方法的原则，子类不能跑出新的异常
+* */
+
+
+public class SleepDemo {
+	public static void main(String[] args) throws Exception {
+		for (int i = 5; i>=0 ; i--) {
+			System.out.println("i=" + i);
+			Thread.sleep(1000);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+package 吃苹果比赛;
+
+class Person extends Thread {
+	static private int num = 50;
+	
+	public Person(String name) {
+		// TODO Auto-generated constructor stub
+		super(name);
+	}
+	
+	public void run() {
+		for (int i = 0; i < 50; i++) {
+			if (0 < num) {
+				System.out.println(getName() + "吃了第" + num-- + "个苹果");
+			}
+		}
+	}
+}
+
+public class ExtendsDemo {
+	public static void main(String[] args) {
+
+		new Person("A").start();
+		new Person("B").start();
+		new Person("C").start();
+	}
+}

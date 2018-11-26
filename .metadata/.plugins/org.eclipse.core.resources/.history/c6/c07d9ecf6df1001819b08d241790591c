@@ -1,0 +1,30 @@
+package 线程安全181126;
+
+/*在线程的run()方法上不能使用throws来声明抛出异常，只能在方法中使用try-catch来处理异常
+ * 因为自雷覆盖弗雷方法的原则，子类不能跑出新的异常
+* */
+class Person extends Thread {
+	static private int num = 50; //添加static修饰，不然没人都吃50个苹果
+	
+	public Person(String name) {
+		// TODO Auto-generated constructor stub
+		super(name);
+	}
+	
+	public void run() {
+		for (int i = 0; i < 50; i++) {
+			if (0 < num) {
+				System.out.println(getName() + "吃了第" + num-- + "个苹果");
+			}
+		}
+	}
+}
+
+public class ExtendsDemo {
+	public static void main(String[] args) {
+
+		new Person("小A").start();
+		new Person("小B").start();
+		new Person("小C").start();
+	}
+}
