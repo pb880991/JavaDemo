@@ -7,7 +7,7 @@ public class Producer implements Runnable{
 		this.resource = resource;
 	}
 	public void run() {
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 200; i++) {
 			if(i % 2== 0) {
 				resource.push("春哥哥", "男");
 			}else {
