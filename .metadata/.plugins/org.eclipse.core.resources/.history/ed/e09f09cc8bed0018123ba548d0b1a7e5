@@ -1,8 +1,0 @@
-
-public class StringDemo {
-
-	public static void main(String[] args) {
-		System.out.println(121242);
-		String str = "老婆大人";
-	}
-}

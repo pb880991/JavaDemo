@@ -1,9 +1,0 @@
-import java.util.UUID;
-
-public class UUIDDemo {
-	public static void main(String[] args) {
-		//UUID绝对随机，没有子类，16进制，一般用来表示随机的唯一的字符串
-		String uuid = UUID.randomUUID().toString();
-		System.out.println(uuid);
-	}
-}

@@ -15,7 +15,7 @@ public class ShareResource {
 			Thread.sleep(10);
 			this.gender = gender;
 			isEmpty = false;
-			this.notify();
+			this.notifyAll();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -30,7 +30,7 @@ public class ShareResource {
 			Thread.sleep(10);
 			System.out.println(this.name + "-" + this.gender);
 			isEmpty = true;
-			this.notify();
+			this.notifyAll();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

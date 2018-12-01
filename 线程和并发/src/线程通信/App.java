@@ -15,7 +15,9 @@ public class App {
 		ShareResource resource = new ShareResource();
 		//启动生产线程
 		new Thread(new Producer(resource)).start();
+		new Thread(new Producer(resource)).start();
 		//启动消费线程
+		new Thread(new Consumer(resource)).start();
 		new Thread(new Consumer(resource)).start();
 	}
 }
